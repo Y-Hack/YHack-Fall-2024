@@ -1,20 +1,15 @@
-<script setup>
-import ErrorModal from './ErrorModal.vue'
-import { ref } from 'vue'
-
-const arrw = ">";
-</script>
+<script setup></script>
 <template>
   <section id="about" class="-abt-container">
     <div class="abt-wrapper">
       <div class="abt-info">
         <h1 class="-htitle">ABOUT</h1>
         <p class="-habout">
-          YHack is Yale's premier hackathon. We invite all students who share our passion for 
-          innovation and learning to immerse yourselves in an energetic atmosphere, 
-          learning and creating alongside individuals as passionate as yourselves! Expect a 
-          myriad of spectacular rewards, deeply technical workshops, renowned guest speakers, and 
-          engaging activities throughout the event!
+          YHack is Yale's premier hackathon. We invite all students who share our passion for
+          innovation and learning to immerse yourselves in an energetic atmosphere, learning and
+          creating alongside individuals as passionate as yourselves! Expect a myriad of spectacular
+          rewards, deeply technical workshops, renowned guest speakers, and engaging activities
+          throughout the event!
         </p>
       </div>
       <div class="abt-stats">
@@ -32,7 +27,7 @@ const arrw = ">";
             <h2 class="abt-caption">Projects</h2>
           </div>
           <div class="abt-stat01">
-            <img class="controller" src="/src/assets/images/media_track.PNG" alt="controller" >
+            <img class="controller" src="/src/assets/images/media_track.png" alt="controller" />
           </div>
           <div class="abt-stat01 item4">
             <h1 class="abt-number">10</h1>
@@ -61,7 +56,7 @@ const arrw = ">";
 .-htitle {
   font-size: 2.75rem;
   line-height: 3.5rem;
-  text-shadow: -3px 3px #8a14aa
+  text-shadow: -3px 3px #8a14aa;
 }
 
 .-habout {
@@ -79,8 +74,8 @@ const arrw = ">";
 
 .abt-data {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(2, auto);  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 2.5rem;
   padding: 2.5rem 0;
 }
@@ -95,13 +90,13 @@ const arrw = ">";
 .abt-number {
   font-size: 4.5rem;
   font-weight: 500;
-  text-shadow: -3px 3px #8a14aa
+  text-shadow: -3px 3px #8a14aa;
 }
 
 .abt-caption {
   font-size: 2rem;
   font-weight: 300;
-  text-shadow: -3px 3px #8a14aa
+  text-shadow: -3px 3px #8a14aa;
 }
 
 @media only screen and (max-width: 767px) {
