@@ -7,7 +7,7 @@ import TSAI from '@/assets/images/sponsors/tsai.png'
 import WOLF from '@/assets/images/sponsors/wolfram.png'
 import DESHAW from '@/assets/images/sponsors/deshaw.png'
 import FP from '@/assets/images/sponsors/fp.png'
-import AF from '@/assets/images/sponsors/actualfood.png' 
+import AF from '@/assets/images/sponsors/actualfood.png'
 
 export default {
   data() {
@@ -36,35 +36,37 @@ export default {
           Interested in sponsoring YHack?
           <br />
           Email us at
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:organizers@yhack.org"
-            class="-mail-us"
-          >
-            organizers@yhack.org</a
-          >!
+          <strong>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:organizers@yhack.org"
+              class="-mail-us"
+            >
+              organizers@yhack.org</a
+            >!
+          </strong>
         </p>
       </div>
       <div class="-sponsors-list">
         <a href="https://www.deshaw.com/" target="_blank" rel="noopener noreferrer">
-            <img :src="DESHAW" alt="DESHAW" class="-slogo" />
+          <img :src="DESHAW" alt="DESHAW" class="-slogo" />
         </a>
         <!-- <a href="https://supabase.com/" target="_blank" rel="noopener noreferrer">
             <img :src="SUPA" alt="SUPABASE" class="-slogo" />
         </a> -->
         <a href="https://city.yale.edu/" target="_blank" rel="noopener noreferrer">
-            <img :src="TSAI" alt="TSAI CITY" class="-slogo" />
+          <img :src="TSAI" alt="TSAI CITY" class="-slogo" />
         </a>
         <a href="https://seas.yale.edu/" target="_blank" rel="noopener noreferrer">
-            <img :src="SEAS" alt="SEAS" class="-slogo" />
+          <img :src="SEAS" alt="SEAS" class="-slogo" />
         </a>
-        
+
         <!-- <a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">
             <img :src="HF" alt="HF" class="-slogo" />
         </a> -->
         <a href="https://www.wolfram.com/" target="_blank" rel="noopener noreferrer">
-            <img :src="WOLF" alt="WOLFRAM" class="-slogo" />
+          <img :src="WOLF" alt="WOLFRAM" class="-slogo" />
         </a>
         <!-- <a href="https://www.freshprints.com/" target="_blank" rel="noopener noreferrer">
             <img :src="FP" alt="FRESH PRINTS" class="-slogo" />
@@ -167,7 +169,6 @@ export default {
   background-color: transparent; /* Make sure the container is transparent */
 }
 
-
 @keyframes glitch-it {
   0% {
     transform: translate(0);
@@ -208,6 +209,4 @@ export default {
     width: unset;
   }
 }
-
-
 </style>

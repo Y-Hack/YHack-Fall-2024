@@ -8,7 +8,6 @@ import SponsorsThanks from '../components/SponsorsThanks.vue'
 import CreditsEnding from '../components/CreditsEnding.vue'
 import TracksTypes from '../components/TracksType.vue'
 import Schedule from '../components/Schedule.vue'
-
 </script>
 
 <template>
@@ -28,6 +27,8 @@ import Schedule from '../components/Schedule.vue'
 .-container-x {
   /* height: 9070px; */
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/yhackbg.png'); 
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../assets/images/yhackbg.png');
+  padding: 1rem;
 }
 </style>

@@ -74,7 +74,7 @@ export default {
 .-m {
   font-size: 2.5rem;
   font-weight: 700;
-  text-shadow: -3px 3px #8a14aa
+  text-shadow: -3px 3px #8a14aa;
 }
 .-ko {
   font-style: italic;
@@ -83,7 +83,7 @@ export default {
 }
 @media only screen and (max-width: 767px) {
   .-m {
-    font-size: 2.375rem;
+    font-size: 2rem;
     text-align: center;
   }
 }

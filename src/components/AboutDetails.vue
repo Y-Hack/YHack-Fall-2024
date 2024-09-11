@@ -63,21 +63,36 @@
   font-size: 1.25rem;
 }
 
-.abt-info {
-  width: 600px;
+@media screen and (min-width: 768px) {
+  .abt-info {
+    width: 600px;
+  }
 }
 
 .abt-stats {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .abt-data {
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   gap: 2.5rem;
   padding: 2.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .abt-stats {
+    justify-content: end;
+  }
+  .abt-data {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+  }
 }
 
 .abt-stat01 {
@@ -88,15 +103,25 @@
 }
 
 .abt-number {
-  font-size: 4.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-shadow: -3px 3px #8a14aa;
 }
 
 .abt-caption {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 300;
   text-shadow: -3px 3px #8a14aa;
+}
+
+@media screen and (min-width: 768px) {
+  .abt-number {
+    font-size: 4.5rem;
+  }
+
+  .abt-caption {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {

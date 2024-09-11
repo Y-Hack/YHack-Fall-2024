@@ -9,66 +9,87 @@ const date = ref('Oct 5th - 6th, 2024 ')
 <template>
   <section id="home" class="splash">
     <div class="splash-content">
-      <img class="logo" src="/src/assets/images/yhack-logo.png" alt="yhack logo">
+      <img class="logo" src="/src/assets/images/yhack-logo.png" alt="yhack logo" />
       <CountDown />
       <div class="start-date">
-        <h3> {{ date }} </h3>
+        <h3>{{ date }}</h3>
       </div>
       <div class="-splsh-socials">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://twitter.com/whyhackatyhack"
-              class="-sm"
-            >
-              <font-awesome-icon :icon="['fab', 'x-twitter']" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/whyhackatyhack/"
-              class="-sm"
-            >
-              <font-awesome-icon :icon="['fab', 'square-instagram']" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/whyhackatyhack"
-              class="-sm"
-            >
-              <font-awesome-icon :icon="['fab', 'square-facebook']" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/company/25075624/admin/"
-              class="-sm"
-            >
-              <font-awesome-icon :icon="['fab', 'linkedin']" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.youtube.com/channel/UCu10FhvXTa9tp5VTs61-QyA"
-              class="-sm"
-            >
-              <font-awesome-icon :icon="['fab', 'youtube']" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="mailto:organizers@yhack.org"
-              class="-sm"
-            >
-              <font-awesome-icon :icon="['fas', 'envelope']" />
-            </a>
-          </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/whyhackatyhack"
+          class="-sm"
+        >
+          <font-awesome-icon :icon="['fab', 'x-twitter']" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/whyhackatyhack/"
+          class="-sm"
+        >
+          <font-awesome-icon :icon="['fab', 'square-instagram']" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/whyhackatyhack"
+          class="-sm"
+        >
+          <font-awesome-icon :icon="['fab', 'square-facebook']" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/company/25075624/admin/"
+          class="-sm"
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.youtube.com/channel/UCu10FhvXTa9tp5VTs61-QyA"
+          class="-sm"
+        >
+          <font-awesome-icon :icon="['fab', 'youtube']" />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:organizers@yhack.org" class="-sm">
+          <font-awesome-icon :icon="['fas', 'envelope']" />
+        </a>
+      </div>
+      <li class="_apply_">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdJPFqBPuTwcsCoULluGGmodo24mNgHM3w1HIvpewpKgFdybw/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Apply</a
+        >
+      </li>
+      <div style="font-size: 1rem; margin-top: 1rem">Applications due Sep 22, 11:59 PM ET</div>
     </div>
   </section>
 </template>
 
 <style scoped>
+._apply_ {
+  font-size: 1.5rem;
+  font-weight: 400;
+  background: #611292;
+  padding: 0.5rem 1.5rem;
+  transition: 300ms ease;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+._apply_ > a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+._apply_:hover {
+  transform: scale(1.0625);
+}
 .logo {
   width: 40rem;
   padding: 3rem 0 1rem 0;
@@ -89,9 +110,14 @@ const date = ref('Oct 5th - 6th, 2024 ')
   transform: translate(0, -25%);
 }
 .start-date {
-  font-size: 1.375rem;
+  font-size: 1rem;
   padding-bottom: 0.15rem;
   border-bottom: 2px solid white;
+}
+@media screen and (min-width: 768px) {
+  .start-date {
+    font-size: 1.375rem;
+  }
 }
 .start-date h3 {
   font-weight: 400;
