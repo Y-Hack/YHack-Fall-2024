@@ -90,9 +90,16 @@ export default {
 }
 
 .navbar-logo {
+  visibility: hidden;
+
   height: 64px;
   width: 64px;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .navbar-logo {
+    visibility: visible;
+  }
 }
 
 .navbar-items {
