@@ -74,6 +74,7 @@
 .statsone,
 .statstwo {
   gap: 4rem;
+  flex-wrap: wrap;
 }
 .value {
   font-size: 4.5rem;
@@ -83,5 +84,16 @@
   font-size: 2rem;
   font-weight: 300;
   text-shadow: -2px 2px #8a14aa;
+}
+@media only screen and (max-width: 567px) {
+  .statistics {
+    gap: 3rem;
+  }
+  .value {
+    font-size: 3rem;
+  }
+  .caption {
+    font-size: 1.5rem;
+  }
 }
 </style>

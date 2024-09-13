@@ -36,7 +36,7 @@ const links = [
 .navigation {
   position: static;
   width: 100%;
-  height: 6.5rem;
+  min-height: 6.5rem;
   background: linear-gradient(to bottom, rgba(6, 0, 14, 0.5), rgba(0, 0, 0, 0));
 }
 .navwrapper {
@@ -76,6 +76,22 @@ const links = [
   }
   .apply:active {
     transform: scale(0.975);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navwrapper {
+    padding: 0.5rem 1.5rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pagelinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.125rem;
   }
 }
 </style>

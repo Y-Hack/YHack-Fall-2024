@@ -143,6 +143,7 @@ const socialLinks = [
 .countdown {
   font-size: 2.125rem;
   text-shadow: -3px 3px #8a14aa;
+  text-align: center;
 }
 
 .date {
@@ -196,6 +197,11 @@ const socialLinks = [
   }
   .btnapply:active {
     transform: scale(0.975);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home {
+    padding-top: 2rem;
   }
 }
 </style>

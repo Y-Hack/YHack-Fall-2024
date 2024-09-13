@@ -91,4 +91,9 @@
   font-weight: 300;
   text-shadow: 2px 2px 4px #1c0024;
 }
+@media only screen and (max-width: 567px) {
+  .trackrow {
+    flex-direction: column;
+  }
+}
 </style>
