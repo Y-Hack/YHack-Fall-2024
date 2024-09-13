@@ -23,7 +23,7 @@
             <h2 class="abt-caption">Universities</h2>
           </div>
           <div class="abt-stat01">
-            <h1 class="abt-number">20</h1>
+            <h1 class="abt-number">40</h1>
             <h2 class="abt-caption">Projects</h2>
           </div>
           <div class="abt-stat01">
@@ -34,7 +34,7 @@
             <h2 class="abt-caption">Judges</h2>
           </div>
           <div class="abt-stat01 item5">
-            <h1 class="abt-number">48</h1>
+            <h1 class="abt-number">24</h1>
             <h2 class="abt-caption">Hours</h2>
           </div>
         </div>
