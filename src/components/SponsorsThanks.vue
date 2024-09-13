@@ -160,13 +160,13 @@ export default {
 }
 
 .-slogo {
-  background-color: transparent; /* Ensures background is transparent */
+  background-color: #fff; 
   width: 20vw;
   padding: 0.5rem;
 }
 
 .-sponsors-list {
-  background-color: transparent; /* Make sure the container is transparent */
+  background-color: #fff;
 }
 
 @keyframes glitch-it {

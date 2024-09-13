@@ -76,11 +76,12 @@ const date = ref('Oct 5th - 6th, 2024 ')
 ._apply_ {
   font-size: 1.5rem;
   font-weight: 400;
-  background: #611292;
+  background: #9743cc;
+  border: 3px solid #3b0052;
   padding: 0.5rem 1.5rem;
   transition: 300ms ease;
   border-radius: 8px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 ._apply_ > a {
   color: white;
@@ -99,7 +100,7 @@ const date = ref('Oct 5th - 6th, 2024 ')
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 96px);
   color: white;
 }
 .splash-content {
@@ -107,7 +108,7 @@ const date = ref('Oct 5th - 6th, 2024 ')
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translate(0, -25%);
+  transform: translate(0, -17.5%);
 }
 .start-date {
   font-size: 1rem;
