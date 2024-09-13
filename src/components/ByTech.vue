@@ -17,10 +17,11 @@ footer {
 }
 @media only screen and (max-width: 767px) {
   footer {
-    padding: 0 1rem;
+    padding: 6rem 1rem 2rem 1rem;
   }
 }
 .madewithloveby {
+  text-align: center;
   flex-direction: column;
 }
 .copyright {
