@@ -4,6 +4,7 @@ import TSAI from "@/assets/images/sponsors/tsai.png";
 import WOLF from "@/assets/images/sponsors/wolfram.png";
 import DESHAW from "@/assets/images/sponsors/deshaw.png";
 import MLH from "@/assets/images/sponsors/mlh-logo.svg";
+import YALE from "@/assets/images/sponsors/yale.png";
 
 const sponsors = [
   { name: "D.E. Shaw", src: DESHAW, url: "https://www.deshaw.com/" },
@@ -11,6 +12,7 @@ const sponsors = [
   { name: "SEAS", src: SEAS, url: "https://seas.yale.edu/" },
   { name: "TSAI CITY", src: TSAI, url: "https://city.yale.edu/" },
   { name: "MLH", src: MLH, url: "https://mlh.io/" },
+  { name: "YALE", src: YALE, url: "https://yalecollege.yale.edu/" },
 ];
 </script>
 
