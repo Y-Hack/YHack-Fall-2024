@@ -1,13 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-    <section class="subabout schedule">
-
-    </section>
+  <section class="subabout schedule"></section>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

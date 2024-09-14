@@ -7,6 +7,14 @@
     <div class="madewithloveby flx">
       <h1 class="yhacktech">Made with 💜 by the YHack team!</h1>
       <h2 class="copyright">© 2024 YHack. All Rights Reserved.</h2>
+      <p class="codeofconduct">
+        <a
+          href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Code of Conduct.
+        </a>
+      </p>
     </div>
   </footer>
 </template>
@@ -26,5 +34,19 @@ footer {
 }
 .copyright {
   font-weight: 400;
+}
+.codeofconduct {
+  padding-top: 0.5rem;
+}
+.codeofconduct a {
+  font-size: 0.75rem;
+  font-style: italic;
+  text-decoration: underline;
+  color: #f8e1ff;
+}
+@media (hover : hover) {
+  .codeofconduct a:hover {
+    text-decoration: underline;
+  }
 }
 </style>

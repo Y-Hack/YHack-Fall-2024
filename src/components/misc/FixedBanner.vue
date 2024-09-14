@@ -17,9 +17,9 @@ aside img {
   width: 5rem;
 }
 @media only screen and (max-width: 767px) {
-	aside {
-		right: 0.5rem;
-	}
+  aside {
+    right: 0.5rem;
+  }
   aside img {
     width: 2.5rem;
   }
