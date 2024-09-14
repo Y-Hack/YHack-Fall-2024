@@ -6,11 +6,12 @@
       <div class="info">
         <h1 class="head">ABOUT</h1>
         <p class="desc">
-          YHack is Yale's premier hackathon. We invite all students who share our passion for
-          innovation and learning to immerse yourselves in an energetic atmosphere, learning and
-          creating alongside individuals as passionate as yourselves! Expect a myriad of spectacular
-          rewards, deeply technical workshops, renowned guest speakers, and engaging activities
-          throughout the event!
+          YHack is Yale's premier hackathon. We invite all students who share
+          our passion for innovation and learning to immerse yourselves in an
+          energetic atmosphere, learning and creating alongside individuals as
+          passionate as yourselves! Expect a myriad of spectacular rewards,
+          deeply technical workshops, renowned guest speakers, and engaging
+          activities throughout the event!
         </p>
       </div>
       <div class="statistics">

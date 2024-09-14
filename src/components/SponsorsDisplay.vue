@@ -1,15 +1,15 @@
 <script setup>
-import SEAS from '@/assets/images/sponsors/seas.png'
-import TSAI from '@/assets/images/sponsors/tsai.png'
-import WOLF from '@/assets/images/sponsors/wolfram.png'
-import DESHAW from '@/assets/images/sponsors/deshaw.png'
+import SEAS from "@/assets/images/sponsors/seas.png";
+import TSAI from "@/assets/images/sponsors/tsai.png";
+import WOLF from "@/assets/images/sponsors/wolfram.png";
+import DESHAW from "@/assets/images/sponsors/deshaw.png";
 
 const sponsors = [
-  { name: 'D.E. Shaw', src: DESHAW, url: 'https://www.deshaw.com/' },
-  { name: 'Wolfram', src: WOLF, url: 'https://www.wolfram.com/' },
-  { name: 'SEAS', src: SEAS, url: 'https://seas.yale.edu/' },
-  { name: 'TSAI CITY', src: TSAI, url: 'https://city.yale.edu/' }
-]
+  { name: "D.E. Shaw", src: DESHAW, url: "https://www.deshaw.com/" },
+  { name: "Wolfram", src: WOLF, url: "https://www.wolfram.com/" },
+  { name: "SEAS", src: SEAS, url: "https://seas.yale.edu/" },
+  { name: "TSAI CITY", src: TSAI, url: "https://city.yale.edu/" },
+];
 </script>
 
 <template>
@@ -19,11 +19,16 @@ const sponsors = [
       SPONSORS
     </h1>
     <h2 class="sponsormsg">
-      Interested in sponsoring YHack? <span>We are Yale's premier hackathon!</span>
+      Interested in sponsoring YHack?
+      <span>We are Yale's premier hackathon!</span>
     </h2>
     <h3 class="dropemail">
       Email us at
-      <a target="_blank" rel="noopener noreferrer" href="mailto:organizers@yhack.org">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="mailto:organizers@yhack.org"
+      >
         organizers@yhack.org</a
       >!
     </h3>
@@ -84,7 +89,10 @@ const sponsors = [
   gap: 1rem;
   margin-left: 1.5rem;
   padding: 1rem 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.875), rgba(255, 255, 255, 0.875));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.875),
+    rgba(255, 255, 255, 0.875)
+  );
 }
 .sponsorslogo {
   max-width: 225px;

@@ -1,18 +1,20 @@
 <script setup>
+import FixedBanner from "./FixedBanner.vue";
+
 const links = [
-  { href: '/#home', label: 'HOME', class: 'goto' },
-  { href: '/#about', label: 'ABOUT', class: 'goto' },
-  { href: '/#tracks', label: 'TRACKS', class: 'goto' },
-  { href: '/#faqs', label: 'FAQs', class: 'goto' },
-  { href: '/#sponsors', label: 'SPONSORS', class: 'goto' },
+  { href: "/#home", label: "HOME", class: "goto" },
+  { href: "/#about", label: "ABOUT", class: "goto" },
+  { href: "/#tracks", label: "TRACKS", class: "goto" },
+  { href: "/#faqs", label: "FAQs", class: "goto" },
+  { href: "/#sponsors", label: "SPONSORS", class: "goto" },
   {
-    href: 'https://docs.google.com/forms/d/e/1FAIpQLSdJPFqBPuTwcsCoULluGGmodo24mNgHM3w1HIvpewpKgFdybw/viewform',
-    label: 'APPLY',
-    class: 'goto apply',
-    target: '_blank',
-    rel: 'noopener noreferrer'
-  }
-]
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSdJPFqBPuTwcsCoULluGGmodo24mNgHM3w1HIvpewpKgFdybw/viewform",
+    label: "APPLY",
+    class: "goto apply",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+];
 </script>
 
 <template>
@@ -20,16 +22,23 @@ const links = [
     <nav class="navwrapper">
       <div class="logo">
         <a href="/#home" class="linkhome">
-          <img src="../../assets/images/yhack/heart.png" class="heart" alt="logo" />
+          <img
+            src="../../assets/images/yhack/heart.png"
+            class="heart"
+            alt="logo"
+          />
         </a>
       </div>
       <ul class="pagelinks">
         <li v-for="link in links" :key="link.label" :class="link.class">
-          <a :href="link.href" :target="link.target" :rel="link.rel">{{ link.label }}</a>
+          <a :href="link.href" :target="link.target" :rel="link.rel">{{
+            link.label
+          }}</a>
         </li>
       </ul>
     </nav>
   </header>
+  <FixedBanner />
 </template>
 
 <style scoped>
@@ -56,6 +65,7 @@ const links = [
   align-items: center;
   flex-direction: row;
   gap: 1.75rem;
+  margin: 0 6rem 0 1rem;
 }
 .goto a {
   color: #fff;
@@ -85,6 +95,9 @@ const links = [
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .pagelinks {
+    margin: unset;
   }
 }
 @media only screen and (max-width: 640px) {

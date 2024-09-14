@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
@@ -12,6 +12,6 @@ import { RouterLink, RouterView } from 'vue-router'
 div {
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('./assets/images/yhack/bg.png');
+    url("./assets/images/yhack/bg.png");
 }
 </style>

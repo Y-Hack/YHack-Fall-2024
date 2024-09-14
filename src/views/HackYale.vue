@@ -1,12 +1,12 @@
 <script setup>
-import { ref } from 'vue'
-import NavBar from '../components/misc/NavBar.vue'
-import SplashPage from '../components/SplashPage.vue'
-import AboutInfo from '../components/AboutInfo.vue'
-import TrackTypes from '../components/TrackTypes.vue'
-import FrequentAsks from '../components/FrequentAsks.vue'
-import SponsorsDisplay from '../components/SponsorsDisplay.vue'
-import ByTech from '../components/ByTech.vue'
+import { ref } from "vue";
+import NavBar from "../components/misc/NavBar.vue";
+import SplashPage from "../components/SplashPage.vue";
+import AboutInfo from "../components/AboutInfo.vue";
+import TrackTypes from "../components/TrackTypes.vue";
+import FrequentAsks from "../components/FrequentAsks.vue";
+import SponsorsDisplay from "../components/SponsorsDisplay.vue";
+import ByTech from "../components/ByTech.vue";
 </script>
 
 <template>

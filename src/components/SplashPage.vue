@@ -1,81 +1,88 @@
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 
-const yhackDate = new Date('2024-10-05T08:00:00')
-const countdownFinished = ref(false)
-const timeLeft = ref(null)
-let intervalId = null
+const yhackDate = new Date("2024-10-05T08:00:00");
+const countdownFinished = ref(false);
+const timeLeft = ref(null);
+let intervalId = null;
 
-const days = computed(() => String(Math.floor(timeLeft.value / (60 * 60 * 24))).padStart(2, '0'))
+const days = computed(() =>
+  String(Math.floor(timeLeft.value / (60 * 60 * 24))).padStart(2, "0"),
+);
 const hours = computed(() =>
-  String(Math.floor((timeLeft.value % (60 * 60 * 24)) / (60 * 60))).padStart(2, '0')
-)
+  String(Math.floor((timeLeft.value % (60 * 60 * 24)) / (60 * 60))).padStart(
+    2,
+    "0",
+  ),
+);
 const minutes = computed(() =>
-  String(Math.floor((timeLeft.value % (60 * 60)) / 60)).padStart(2, '0')
-)
-const seconds = computed(() => String(Math.floor(timeLeft.value % 60)).padStart(2, '0'))
+  String(Math.floor((timeLeft.value % (60 * 60)) / 60)).padStart(2, "0"),
+);
+const seconds = computed(() =>
+  String(Math.floor(timeLeft.value % 60)).padStart(2, "0"),
+);
 
 const startCountdown = () => {
-  const now = new Date()
-  const difference = yhackDate - now
-  timeLeft.value = Math.max(difference, 0) / 1000
+  const now = new Date();
+  const difference = yhackDate - now;
+  timeLeft.value = Math.max(difference, 0) / 1000;
 
   if (timeLeft.value <= 0) {
-    countdownFinished.value = true
+    countdownFinished.value = true;
   } else {
     intervalId = setInterval(() => {
-      const now = new Date()
-      const difference = yhackDate - now
-      timeLeft.value = Math.max(difference, 0) / 1000
+      const now = new Date();
+      const difference = yhackDate - now;
+      timeLeft.value = Math.max(difference, 0) / 1000;
 
       if (timeLeft.value <= 0) {
-        countdownFinished.value = true
-        clearInterval(intervalId)
+        countdownFinished.value = true;
+        clearInterval(intervalId);
       }
-    }, 1000)
+    }, 1000);
   }
-}
+};
 
 onMounted(() => {
-  startCountdown()
-})
+  startCountdown();
+});
 
 onBeforeUnmount(() => {
-  clearInterval(intervalId)
-})
+  clearInterval(intervalId);
+});
 
 const socialLinks = [
   {
-    name: 'x-twitter',
-    url: 'https://twitter.com/whyhackatyhack',
-    iconPrefix: 'fab'
+    name: "x-twitter",
+    url: "https://twitter.com/whyhackatyhack",
+    iconPrefix: "fab",
   },
   {
-    name: 'square-instagram',
-    url: 'https://www.instagram.com/whyhackatyhack/',
-    iconPrefix: 'fab'
+    name: "square-instagram",
+    url: "https://www.instagram.com/whyhackatyhack/",
+    iconPrefix: "fab",
   },
   {
-    name: 'square-facebook',
-    url: 'https://www.facebook.com/whyhackatyhack',
-    iconPrefix: 'fab'
+    name: "square-facebook",
+    url: "https://www.facebook.com/whyhackatyhack",
+    iconPrefix: "fab",
   },
   {
-    name: 'linkedin',
-    url: 'https://www.linkedin.com/company/25075624/admin/',
-    iconPrefix: 'fab'
+    name: "linkedin",
+    url: "https://www.linkedin.com/company/25075624/admin/",
+    iconPrefix: "fab",
   },
   {
-    name: 'youtube',
-    url: 'https://www.youtube.com/channel/UCu10FhvXTa9tp5VTs61-QyA',
-    iconPrefix: 'fab'
+    name: "youtube",
+    url: "https://www.youtube.com/channel/UCu10FhvXTa9tp5VTs61-QyA",
+    iconPrefix: "fab",
   },
   {
-    name: 'envelope',
-    url: 'mailto:organizers@yhack.org',
-    iconPrefix: 'fas'
-  }
-]
+    name: "envelope",
+    url: "mailto:organizers@yhack.org",
+    iconPrefix: "fas",
+  },
+];
 </script>
 
 <template>

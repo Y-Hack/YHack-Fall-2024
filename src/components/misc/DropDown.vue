@@ -1,64 +1,64 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const down = ref(true)
+const down = ref(true);
 
 const faqs = ref([
   {
-    q: 'Do I need to have hackathon experience?',
+    q: "Do I need to have hackathon experience?",
     a: "No. We accept people of all skill levels and YHack is a great event for many who haven't participated in a hackathon.",
-    open: false
+    open: false,
   },
   {
-    q: 'Can I register with a team?',
+    q: "Can I register with a team?",
     a: "Team formation will happen after registration. You should get an email a few days before your hackathon. In case you don't have a team, we'll have formation before the hackathon starts!",
-    open: false
+    open: false,
   },
   {
-    q: 'What if I have no experience at all?',
+    q: "What if I have no experience at all?",
     a: "You've found the perfect place and time to learn! Whether you're a designer, coder, tinkerer or somewhere in-between, there will be dedicated events and mentors to ease your way through your YHack Mini experience.",
-    open: false
+    open: false,
   },
   {
-    q: 'How do teams work?',
-    a: 'After individual reservation, we will send out an email regarding team registration. Teams can be of size 2-4.',
-    open: false
+    q: "How do teams work?",
+    a: "After individual reservation, we will send out an email regarding team registration. Teams can be of size 2-4.",
+    open: false,
   },
   {
-    q: 'How much does it cost to attend?',
-    a: 'Zilch, zero, nada, free!',
-    open: false
+    q: "How much does it cost to attend?",
+    a: "Zilch, zero, nada, free!",
+    open: false,
   },
   {
-    q: 'How will judging work?',
-    a: 'Teams will present their work to judges!',
-    open: false
+    q: "How will judging work?",
+    a: "Teams will present their work to judges!",
+    open: false,
   },
   {
-    q: 'Will there be swag?',
-    a: 'Swag will be handed out to all participants!',
-    open: false
+    q: "Will there be swag?",
+    a: "Swag will be handed out to all participants!",
+    open: false,
   },
   {
-    q: 'What about hardware hacks?',
-    a: 'Unfortunately, this hackathon will not have a hardware track.',
-    open: false
+    q: "What about hardware hacks?",
+    a: "Unfortunately, this hackathon will not have a hardware track.",
+    open: false,
   },
   {
-    q: 'What if I have other questions?',
+    q: "What if I have other questions?",
     a: "Email us at organizers@yhack.org, and we'll respond as soon as we can!",
-    open: false
-  }
-])
+    open: false,
+  },
+]);
 
 const toggleFAQ = (index) => {
   faqs.value.forEach((faq, i) => {
-    if (i !== index) faq.open = false
-  })
+    if (i !== index) faq.open = false;
+  });
 
-  faqs.value[index].open = !faqs.value[index].open
-  down.value = !down.value
-}
+  faqs.value[index].open = !faqs.value[index].open;
+  down.value = !down.value;
+};
 </script>
 
 <template>
