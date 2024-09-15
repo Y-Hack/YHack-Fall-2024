@@ -50,6 +50,7 @@ const sponsors = [
         </a>
       </div>
     </div>
+    <p class="moresponsors">... and more to come!</p>
   </section>
 </template>
 
@@ -103,6 +104,10 @@ const sponsors = [
   width: 100%;
   padding: 1rem;
   transition: 250ms;
+}
+.moresponsors {
+  padding: 1rem 0;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 767px) {
   .sponsorsinfo {
