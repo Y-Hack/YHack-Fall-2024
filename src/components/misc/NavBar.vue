@@ -2,9 +2,9 @@
 import FixedBanner from "./FixedBanner.vue";
 
 const links = [
-  { href: "/#home", label: "HOME", class: "goto" },
   { href: "/#about", label: "ABOUT", class: "goto" },
   { href: "/#tracks", label: "TRACKS", class: "goto" },
+  { href: "/#schedule", label: "SCHEDULE", class: "goto" },
   { href: "/#faqs", label: "FAQs", class: "goto" },
   { href: "/#sponsors", label: "SPONSORS", class: "goto" },
   {
@@ -49,7 +49,7 @@ const links = [
   background: linear-gradient(to bottom, rgba(6, 0, 14, 0.5), rgba(0, 0, 0, 0));
 }
 .navwrapper {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.125rem;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -74,15 +74,17 @@ const links = [
 }
 .apply {
   transition: 250ms;
+  cursor: pointer;
 }
 .apply a {
   background-color: #9743cc;
   padding: 0.5rem 1rem;
   border-radius: 8px;
+  transition: 250ms;
 }
 @media (hover: hover) {
   .apply:hover {
-    transform: scale(1.025);
+    transform: scale(1.0375);
   }
   .apply:active {
     transform: scale(0.975);
@@ -90,7 +92,6 @@ const links = [
 }
 @media only screen and (max-width: 767px) {
   .navwrapper {
-    padding: 0.5rem 1.5rem;
     gap: 1rem;
     display: flex;
     align-items: center;

@@ -4,6 +4,7 @@ import NavBar from "../components/misc/NavBar.vue";
 import SplashPage from "../components/SplashPage.vue";
 import AboutInfo from "../components/AboutInfo.vue";
 import TrackTypes from "../components/TrackTypes.vue";
+import HackingSchedule from "../components/HackingSchedule.vue";
 import FrequentAsks from "../components/FrequentAsks.vue";
 import SponsorsDisplay from "../components/SponsorsDisplay.vue";
 import ByTech from "../components/ByTech.vue";
@@ -15,6 +16,7 @@ import ByTech from "../components/ByTech.vue";
     <SplashPage />
     <AboutInfo />
     <TrackTypes />
+    <HackingSchedule />
     <FrequentAsks />
     <SponsorsDisplay />
     <ByTech />

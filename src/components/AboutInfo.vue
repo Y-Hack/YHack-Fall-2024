@@ -70,6 +70,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: default;
   gap: 1rem;
 }
 .statsone,

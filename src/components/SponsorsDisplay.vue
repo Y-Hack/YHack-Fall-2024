@@ -104,6 +104,11 @@ const sponsors = [
   padding: 1rem;
   transition: 250ms;
 }
+@media only screen and (max-width: 767px) {
+  .sponsorsinfo {
+    margin-left: 1rem;
+  }
+}
 @media (hover: hover) {
   .sponsorslogo:hover {
     transform: scale(1.075);

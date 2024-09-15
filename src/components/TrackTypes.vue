@@ -76,6 +76,14 @@
 </template>
 
 <style scoped>
+@keyframes brightness-animation {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(1.5);
+  }
+}
 .tracks {
   padding: 2rem 0;
 }
@@ -105,6 +113,13 @@
 .trackimg {
   max-width: 160px;
   width: 100%;
+  transition: 250ms;
+  animation: brightness-animation 1.5s infinite alternate;
+}
+@media (hover: hover) {
+  .trackimg:hover {
+    transform: scale(1.05);
+  }
 }
 .trackinfo {
   font-size: 1.375rem;

@@ -12,7 +12,7 @@
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
           rel="noopener noreferrer"
-        >Code of Conduct.
+          >Code of Conduct.
         </a>
       </p>
     </div>
@@ -44,7 +44,7 @@ footer {
   text-decoration: underline;
   color: #f8e1ff;
 }
-@media (hover : hover) {
+@media (hover: hover) {
   .codeofconduct a:hover {
     text-decoration: underline;
   }
