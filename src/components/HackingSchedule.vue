@@ -1,117 +1,118 @@
 <script setup></script>
 
 <template>
-	<section id="schedule" class="schedule minvh">
-		<div class="header">
-			<div class="linewrapper">
-				<div class="line"></div>
-			</div>
-			<h1 class="head">SCHEDULE</h1>
-		</div>
-		<div class="timetable">
-			<table>
-				<thead>
-					<tr>
-						<th>TIME</th>
-						<th>10/5</th>
-						<th>10/6</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>~ 6:00 AM</td>
-						<td></td>
-						<td class="event lightpurple"></td>
-					</tr>
-					<tr>
-						<td>7:00 AM</td>
-						<td></td>
-						<td class="event lightpurple"></td>
-					</tr>
-					<tr>
-						<td>8:00 AM</td>
-						<td class="event pink" rowspan="2">CHECK IN</td>
-						<td class="event lightpurple"></td>
-					</tr>
-					<tr>
-						<td>9:00 AM</td>
-						<td class="event lightpurple"></td>
-					</tr>
-					<tr>
-						<td>10:00 AM</td>
-						<td class="event violet">Opening Ceremony</td>
-						<td class="event lightpink">Brunch</td>
-					</tr>
-					<tr>
-						<td>11:00 AM</td>
-						<td class="event purple">Hacking: START!</td>
-						<td class="event pink">Hacking: END!</td>
-					</tr>
-					<tr>
-						<td>12:00 PM</td>
-						<td class="event lightpink">Lunch</td>
-						<td class="event lightviolet" rowspan="3">JUDGING</td>
-					</tr>
-					<tr>
-						<td>1:00 PM</td>
-						<td class="event lightpurple"></td>
-					</tr>
-					<tr>
-						<td>2:00 PM</td>
-						<td class="event lightpurple"></td>
-					</tr>
-					<tr>
-						<td>3:00 PM</td>
-						<td class="event lightpurple"></td>
-						<td class="event purple">Closing Ceremony</td>
-					</tr>
-					<tr>
-						<td>4:00 PM</td>
-						<td class="event lightpurple"></td>
-						<td rowspan="3"><em>Buffer</em></td>
-					</tr>
-					<tr>
-						<td>5:00 PM</td>
-						<td class="event lightpurple"></td>
-					</tr>
-					<tr>
-						<td>6:00 PM</td>
-						<td class="event lightpink">Dinner</td>
-					</tr>
-					<tr>
-						<td>7:00 PM</td>
-						<td class="event lightpurple"></td>
-						<td class="event pink">HACKATHON END</td>
-					</tr>
-					<tr>
-						<td>8:00 PM</td>
-						<td class="event lightpurple"></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>9:00 PM</td>
-						<td class="event lightpurple"></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>10:00 PM</td>
-						<td class="event lightpink">Snacks</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>11:00 PM</td>
-						<td class="event lightpurple"></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>12:00 AM ~</td>
-						<td class="event lightpurple"></td>
-						<td></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
+  <section id="schedule" class="schedule minvh">
+    <div class="header">
+      <div class="linewrapper">
+        <div class="line"></div>
+      </div>
+      <h1 class="head">SCHEDULE</h1>
+    </div>
+    <div class="timetable">
+      <table>
+        <thead>
+          <tr>
+            <th>TIME</th>
+            <th>10/5</th>
+            <th>10/6</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>~ 6:00 AM</td>
+            <td></td>
+            <td class="event lightpurple"></td>
+          </tr>
+          <tr>
+            <td>7:00 AM</td>
+            <td></td>
+            <td class="event lightpurple"></td>
+          </tr>
+          <tr>
+            <td>8:00 AM</td>
+            <td class="event pink">CHECK IN</td>
+            <td class="event lightpurple"></td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td class="event violet">Opening Ceremony</td>
+            <td class="event lightpurple"></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td class="event purple">Hacking: START!</td>
+            <td class="event lightpink">Brunch</td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td class="event lightpurple"></td>
+            <td class="event lightviolet" rowspan="4">JUDGING</td>
+          </tr>
+          <tr>
+            <td>12:00 PM</td>
+            <td class="event lightpink">Lunch</td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td class="event lightpurple"></td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td class="event lightpurple"></td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td class="event lightpurple"></td>
+            <td class="event purple">Closing Ceremony</td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td class="event lightpurple"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td class="event lightpurple"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td class="event lightpink">Dinner</td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td class="event lightpurple"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td class="event lightpurple"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9:00 PM</td>
+            <td class="event lightpurple"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10:00 PM</td>
+            <td class="event lightpink">Snacks</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>11:00 PM</td>
+            <td class="event lightpurple"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>12:00 AM ~</td>
+            <td class="event lightpurple"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 </template>
 
 <style scoped>
