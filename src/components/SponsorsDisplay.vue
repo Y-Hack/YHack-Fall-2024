@@ -75,8 +75,13 @@ const sponsors = [
   font-weight: 400;
 }
 .dropemail {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  .dropemail {
+    font-size: 2rem;
+  }
 }
 .dropemail a {
   color: #fff;

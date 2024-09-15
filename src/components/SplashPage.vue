@@ -166,7 +166,12 @@ const socialLinks = [
 .socials {
   margin: 0.5rem 0;
   gap: 1.75rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .socials {
+    font-size: 2rem;
+  }
 }
 .socials a {
   color: #fff;
