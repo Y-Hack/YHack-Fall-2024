@@ -46,12 +46,11 @@
           <tr>
             <td>11:00 AM</td>
             <td class="event lightpurple"></td>
-            <td class="event pink">Hacking: END!</td>
+            <td class="event lightviolet" rowspan="4">JUDGING</td>
           </tr>
           <tr>
             <td>12:00 PM</td>
             <td class="event lightpink">Lunch</td>
-            <td class="event lightviolet" rowspan="3">JUDGING</td>
           </tr>
           <tr>
             <td>1:00 PM</td>
