@@ -126,7 +126,11 @@ const socialLinks = [
           rel="noopener noreferrer"
           >SIGN UP</a
         >
-        <h3 class="deadline">Applications due Sep 22, 11:59 PM ET</h3>
+        <br /><br />
+        <h3 class="deadline">
+          <strong>Priority applications due Sep 19, 11:59 PM ET</strong>
+        </h3>
+        <h3 class="deadline">All applications due Sep 22, 11:59 PM ET</h3>
       </div>
     </div>
   </section>
