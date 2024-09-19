@@ -196,10 +196,14 @@ const socialLinks = [
   font-weight: 700;
 }
 .deadline {
+  text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
   margin-top: 0.75rem;
   text-shadow: 2px 2px 4px #1c0024;
+}
+.deadline strong {
+  text-align: center;
 }
 @media (hover: hover) {
   .socials a:hover {

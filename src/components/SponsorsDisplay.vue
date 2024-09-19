@@ -5,14 +5,16 @@ import WOLF from "@/assets/images/sponsors/wolfram.png";
 import DESHAW from "@/assets/images/sponsors/deshaw.png";
 import MLH from "@/assets/images/sponsors/mlh-logo.svg";
 import YALE from "@/assets/images/sponsors/yale.png";
+import FETCH from "@/assets/images/sponsors/fetchai.png"
 
 const sponsors = [
   { name: "D.E. Shaw", src: DESHAW, url: "https://www.deshaw.com/" },
   { name: "Wolfram", src: WOLF, url: "https://www.wolfram.com/" },
   { name: "SEAS", src: SEAS, url: "https://seas.yale.edu/" },
   { name: "TSAI CITY", src: TSAI, url: "https://city.yale.edu/" },
-  { name: "MLH", src: MLH, url: "https://mlh.io/" },
+  { name: "FETCH", src: FETCH, url: "https://fetch.ai/"},
   { name: "YALE", src: YALE, url: "https://yalecollege.yale.edu/" },
+  { name: "MLH", src: MLH, url: "https://mlh.io/" },
 ];
 </script>
 
