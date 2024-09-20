@@ -6,6 +6,7 @@ import DESHAW from "@/assets/images/sponsors/deshaw.png";
 import MLH from "@/assets/images/sponsors/mlh-logo.svg";
 import YALE from "@/assets/images/sponsors/yale.png";
 import FETCH from "@/assets/images/sponsors/fetchai.png"
+import STANDOUT from "@/assets/images/sponsors/standoutstickers.png"
 
 const sponsors = [
   { name: "D.E. Shaw", src: DESHAW, url: "https://www.deshaw.com/" },
@@ -15,6 +16,7 @@ const sponsors = [
   { name: "FETCH", src: FETCH, url: "https://fetch.ai/"},
   { name: "YALE", src: YALE, url: "https://yalecollege.yale.edu/" },
   { name: "MLH", src: MLH, url: "https://mlh.io/" },
+  { name: "Standout", src: STANDOUT, url: "https://www.standoutstickers.com/"}
 ];
 </script>
 
