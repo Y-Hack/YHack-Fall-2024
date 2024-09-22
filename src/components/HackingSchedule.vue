@@ -30,45 +30,43 @@
           </tr>
           <tr>
             <td>8:00 AM</td>
-            <td class="event pink">CHECK IN</td>
+            <td class="event pink" rowspan="2">CHECK IN & Breakfast!</td>
             <td class="event lightpurple"></td>
           </tr>
           <tr>
             <td>9:00 AM</td>
-            <td class="event violet">Opening Ceremony</td>
             <td class="event lightpurple"></td>
           </tr>
           <tr>
             <td>10:00 AM</td>
+            <td class="event violet">Opening Ceremony</td>
+            <td class="event purple">Hacking: STOP!</td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
             <td class="event purple">Hacking: START!</td>
             <td class="event lightpink">Brunch</td>
           </tr>
           <tr>
-            <td>11:00 AM</td>
-            <td class="event lightpurple"></td>
-            <td class="event lightviolet" rowspan="4">JUDGING</td>
-          </tr>
-          <tr>
             <td>12:00 PM</td>
-            <td class="event lightpink">Lunch</td>
+            <td class="event lightpurple"></td>
+            <td class="event lightviolet" rowspan="3">JUDGING</td>
           </tr>
           <tr>
             <td>1:00 PM</td>
-            <td class="event lightpurple"></td>
+            <td class="event lightpink" rowspan="2">Lunch</td>
           </tr>
           <tr>
             <td>2:00 PM</td>
-            <td class="event lightpurple"></td>
           </tr>
           <tr>
             <td>3:00 PM</td>
             <td class="event lightpurple"></td>
-            <td class="event purple">Closing Ceremony</td>
+            <td class="event purple" rowspan="2">Closing Ceremony</td>
           </tr>
           <tr>
             <td>4:00 PM</td>
             <td class="event lightpurple"></td>
-            <td></td>
           </tr>
           <tr>
             <td>5:00 PM</td>
@@ -77,11 +75,10 @@
           </tr>
           <tr>
             <td>6:00 PM</td>
-            <td class="event lightpink">Dinner</td>
+            <td class="event lightpink" rowspan="2">Dinner</td>
           </tr>
           <tr>
             <td>7:00 PM</td>
-            <td class="event lightpurple"></td>
             <td></td>
           </tr>
           <tr>
@@ -96,12 +93,11 @@
           </tr>
           <tr>
             <td>10:00 PM</td>
-            <td class="event lightpink">Snacks</td>
+            <td class="event lightpink" rowspan="2">Snacks</td>
             <td></td>
           </tr>
           <tr>
             <td>11:00 PM</td>
-            <td class="event lightpurple"></td>
             <td></td>
           </tr>
           <tr>
