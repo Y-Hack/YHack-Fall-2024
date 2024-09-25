@@ -8,16 +8,20 @@ import YALE from "@/assets/images/sponsors/yale.png";
 import FETCH from "@/assets/images/sponsors/fetchai.png";
 import ACTUALFOOD from "@/assets/images/sponsors/actualfood.webp";
 import PALANTIR from "@/assets/images/sponsors/palantir.png";
+import LIGHTBOX from "@/assets/images/sponsors/lightbox.png";
+import YSEA from "@/assets/images/sponsors/ysea.png";
 
 const sponsors = [
   { name: "FETCH", src: FETCH, url: "https://fetch.ai/" },
   { name: "D.E. Shaw", src: DESHAW, url: "https://www.deshaw.com/" },
   { name: "Wolfram", src: WOLF, url: "https://www.wolfram.com/" },
-  { name: "ActualFood", src: ACTUALFOOD, url: "http://www.actualfood.com/" },
+  { name: "Lightbox", src: LIGHTBOX, url: "https://www.lightboxre.com/" },
   { name: "Palantir", src: PALANTIR, url: "https://www.palantir.com/" },
   { name: "MLH", src: MLH, url: "https://mlh.io/" },
+  { name: "ActualFood", src: ACTUALFOOD, url: "http://www.actualfood.com/" },
   { name: "TSAI CITY", src: TSAI, url: "https://city.yale.edu/" },
   { name: "YALE", src: YALE, url: "https://yalecollege.yale.edu/" },
+  { name: "YSEA", src: YSEA, url: "https://ysea.org/" },
   { name: "SEAS", src: SEAS, url: "https://seas.yale.edu/" },
 ];
 </script>
