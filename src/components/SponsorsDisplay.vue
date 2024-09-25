@@ -96,13 +96,26 @@ const sponsors = [
       <div class="sponsorsinfo remaining-sponsors">
         <a
           class="sponsorslink"
-          v-for="(sponsor, index) in sponsors.slice(3)"
+          v-for="(sponsor, index) in sponsors.slice(3, sponsors.length - 1)"
           :key="index"
           :href="sponsor.url"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img :src="sponsor.src" :alt="sponsor.name" class="sponsorslogo" />
+        </a>
+        <a
+          class="sponsorslink"
+          :key="'last-sponsor'"
+          :href="sponsors[sponsors.length - 1].url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            :src="sponsors[sponsors.length - 1].src"
+            :alt="sponsors[sponsors.length - 1].name"
+            class="sponsorslogo-medium"
+          />
         </a>
       </div>
     </div>
