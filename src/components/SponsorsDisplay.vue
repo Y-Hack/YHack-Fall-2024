@@ -6,11 +6,15 @@ import DESHAW from "@/assets/images/sponsors/deshaw.png";
 import MLH from "@/assets/images/sponsors/mlh-logo.svg";
 import YALE from "@/assets/images/sponsors/yale.png";
 import FETCH from "@/assets/images/sponsors/fetchai.png";
+import ACTUALFOOD from "@/assets/images/sponsors/actualfood.webp";
+import PALANTIR from "@/assets/images/sponsors/palantir.png";
 
 const sponsors = [
   { name: "FETCH", src: FETCH, url: "https://fetch.ai/" },
   { name: "D.E. Shaw", src: DESHAW, url: "https://www.deshaw.com/" },
   { name: "Wolfram", src: WOLF, url: "https://www.wolfram.com/" },
+  { name: "ActualFood", src: ACTUALFOOD, url: "http://www.actualfood.com/" },
+  { name: "Palantir", src: PALANTIR, url: "https://www.palantir.com/" },
   { name: "MLH", src: MLH, url: "https://mlh.io/" },
   { name: "TSAI CITY", src: TSAI, url: "https://city.yale.edu/" },
   { name: "YALE", src: YALE, url: "https://yalecollege.yale.edu/" },
