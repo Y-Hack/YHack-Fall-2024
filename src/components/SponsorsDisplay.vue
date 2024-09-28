@@ -5,7 +5,7 @@ import WOLF from "@/assets/images/sponsors/wolfram.png";
 import DESHAW from "@/assets/images/sponsors/deshaw.png";
 import MLH from "@/assets/images/sponsors/mlh-logo.svg";
 import YALE from "@/assets/images/sponsors/yale.png";
-import FETCH from "@/assets/images/sponsors/fetchai.png";
+import FETCH from "@/assets/images/sponsors/fetch-logo.png";
 import ACTUALFOOD from "@/assets/images/sponsors/actualfood.webp";
 import PALANTIR from "@/assets/images/sponsors/palantir.png";
 import LIGHTBOX from "@/assets/images/sponsors/lightbox.png";
