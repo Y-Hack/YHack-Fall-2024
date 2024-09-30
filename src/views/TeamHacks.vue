@@ -1,6 +1,15 @@
 <script setup>
+import { useRouter } from "vue-router";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+// Add the FontAwesome icons to the library
+library.add(fas);
+
+// Team Members Data
 const teamMembers = [
-  { name: "Brandon Ye", position: "President", photo: new URL('../assets/images/yhack/brandon.png', import.meta.url).href, email: "brandon.yee@yale.edu" },
+  { name: "Brandon Yee", position: "President", photo: new URL('../assets/images/yhack/brandon.png', import.meta.url).href, email: "brandon.yee@yale.edu" },
   { name: "Noah Dee", position: "Co-Director", photo: new URL('../assets/images/yhack/noah.png', import.meta.url).href, email: "noah.dee@yale.edu" },
   { name: "Leslie Kim", position: "Co-Director", photo: new URL('../assets/images/yhack/leslie.png', import.meta.url).href, email: "leslie.kim@yale.edu" },
   { name: "Kenny Tung", position: "Tech Director", photo: new URL('../assets/images/yhack/kenny.png', import.meta.url).href, email: "kenny.tung@yale.edu" },
@@ -11,18 +20,30 @@ const teamMembers = [
   { name: "Christina Xu", position: "Developer", photo: new URL('../assets/images/yhack/christina.png', import.meta.url).href, email: "christina.xu@yale.edu" },
   { name: "Henry Zheng", position: "Developer", photo: new URL('../assets/images/yhack/henry.png', import.meta.url).href, email: "henry.zheng.hpz4@yale.edu" }
 ];
+
+// Using Vue Router to navigate back
+const router = useRouter();
+
+const goToSplashPage = () => {
+  router.push({ path: '/' }); // Modify the path if needed
+};
 </script>
 
 <template>
   <section id="team" class="team">
+    <!-- FontAwesome icon button positioned in the top left corner -->
+    <button @click="goToSplashPage" class="home-button">
+      <font-awesome-icon :icon="['fas', 'house']" class="home-icon" />
+    </button>
+
     <h1 class="team-title">Meet Our Team</h1>
+
     <div class="team-container">
       <div v-for="(member, index) in teamMembers" :key="index" class="team-member">
         <img :src="member.photo" alt="Team Member Photo" class="member-photo" />
         <h2 class="member-name">{{ member.name }}</h2>
         <div class="position-with-icon">
           <p class="member-position">{{ member.position }}</p>
-          <!-- Gmail icon placed to the right of the position -->
           <a :href="'mailto:' + member.email" class="icon-button gmail-button">
             <img src="../assets/images/yhack/gmail.png" alt="Gmail Icon" class="icon" />
           </a>
@@ -33,16 +54,31 @@ const teamMembers = [
 </template>
 
 <style scoped>
-/* General styles */
-body, html {
-  margin: 0;
+/* Button with Icon in the Top Left Corner */
+.home-button {
+  position: absolute; /* Use absolute positioning */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the left */
+  border: none; /* Remove default button border */
+  background: transparent; /* Remove background */
+  cursor: pointer; /* Show pointer on hover */
+  z-index: 1000; /* Keep it on top */
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
-/* Team Section Styling */
+.home-icon {
+  font-size: 30px; /* Set the size of the arrow icon */
+  color: #fff;
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+.home-button:hover .home-icon {
+  transform: scale(1.1); /* Slight zoom-in on hover */
+  color: #c85eff;
+}
+
 .team {
+  position: relative; /* Make the section relative so button positions correctly */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +89,7 @@ body, html {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/images/yhack/bg.png"); /* Adjust path as necessary */
+    url("../assets/images/yhack/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,20 +97,20 @@ body, html {
 
 .team-title {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-shadow: 2px 2px 4px #8a14aa;
 }
 
 .team-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   width: 100%;
   padding: 0 2rem;
 }
 
 .team-member {
-  background-color: rgba(48, 5, 84, 0.8); /* Add transparency */
+  background-color: rgba(48, 5, 84, 0.8);
   border: 2px solid #9743cc;
   border-radius: 15px;
   padding: 1.5rem;
@@ -88,12 +124,12 @@ body, html {
 }
 
 .member-photo {
-  width: 150px; /* Set a maximum width */
-  height: 150px; /* Set a corresponding height */
-  border-radius: 50%; /* Make the team member's photo fully round */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   border: 5px solid #9743cc;
   margin-bottom: 1rem;
-  object-fit: cover; /* Maintain the aspect ratio while filling the container */
+  object-fit: cover;
 }
 
 .member-name {
@@ -110,86 +146,27 @@ body, html {
 
 .member-position {
   font-size: 1.125rem;
-  margin-right: 0.5rem; /* Add spacing between position and the Gmail icon */
+  margin-right: 0.5rem;
   text-shadow: 1px 1px 2px #1c0024;
 }
 
 .icon-button {
   display: inline-block;
   width: 25px;
-  height: 25px; /* Smaller size for the icon */
+  height: 25px;
 }
 
 .icon {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 50%; /* Fully round icons for Gmail */
-  border: 2px solid #fff; /* Optional: Add a border to make the icon stand out */
+  border-radius: 50%;
+  border: 2px solid #fff;
   padding: 2px;
   transition: transform 0.3s ease-in-out;
 }
 
 .icon:hover {
-  transform: scale(1.1); /* Slightly enlarge the icon on hover */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .team-title {
-    font-size: 2rem; /* Smaller title on tablets and smaller screens */
-  }
-
-  .team-member {
-    padding: 1rem; /* Reduce padding for team members */
-  }
-
-  .team-container {
-    gap: 1rem; /* Reduce gap size between team members */
-  }
-
-  .member-name {
-    font-size: 1rem; /* Adjust font size for names */
-  }
-
-  .member-position {
-    font-size: 1rem; /* Adjust font size for positions */
-  }
-
-  .icon-button {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .team {
-    padding: 1rem;
-  }
-
-  .team-title {
-    font-size: 1.75rem; /* Smaller title for phones */
-  }
-
-  .team-container {
-    gap: 0.5rem; /* Even smaller gaps for phone screens */
-  }
-
-  .team-member {
-    padding: 0.75rem;
-  }
-
-  .member-name {
-    font-size: 0.875rem;
-  }
-
-  .member-position {
-    font-size: 0.875rem;
-  }
-
-  .icon-button {
-    width: 18px;
-    height: 18px;
-  }
+  transform: scale(1.1);
 }
 </style>
