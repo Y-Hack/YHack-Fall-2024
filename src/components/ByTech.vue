@@ -5,7 +5,10 @@
     <!-- If you are a Yale student reading this, -->
     <!--  consider joining the YHack Tech team!  -->
     <div class="madewithloveby flx">
-      <h1 class="yhacktech">Made with 💜 by the YHack team!</h1>
+      <h1 class="yhacktech">
+        Made with 💜 by the
+        <RouterLink to="/team" class="linktoteam">YHack team</RouterLink>!
+      </h1>
       <h2 class="copyright">© 2024 YHack. All Rights Reserved.</h2>
       <p class="codeofconduct">
         <a
@@ -48,5 +51,9 @@ footer {
   .codeofconduct a:hover {
     text-decoration: underline;
   }
+}
+.linktoteam {
+  text-decoration: underline;
+  color: #f8e1ff;
 }
 </style>
