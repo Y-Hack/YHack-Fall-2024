@@ -7,13 +7,13 @@ const links = [
   { href: "/#schedule", label: "SCHEDULE", class: "goto" },
   { href: "/#faqs", label: "FAQs", class: "goto" },
   { href: "/#sponsors", label: "SPONSORS", class: "goto" },
-  {
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSdJPFqBPuTwcsCoULluGGmodo24mNgHM3w1HIvpewpKgFdybw/viewform",
-    label: "APPLY",
-    class: "goto apply",
-    target: "_blank",
-    rel: "noopener noreferrer",
-  },
+  // {
+  //   href: "https://docs.google.com/forms/d/e/1FAIpQLSdJPFqBPuTwcsCoULluGGmodo24mNgHM3w1HIvpewpKgFdybw/viewform",
+  //   label: "APPLY",
+  //   class: "goto apply",
+  //   target: "_blank",
+  //   rel: "noopener noreferrer",
+  // },
 ];
 </script>
 

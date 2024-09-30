@@ -118,7 +118,7 @@ const socialLinks = [
           <font-awesome-icon :icon="[social.iconPrefix, social.name]" />
         </a>
       </div>
-      <div class="apply flx">
+      <!-- <div class="apply flx">
         <a
           class="btnapply"
           href="https://docs.google.com/forms/d/e/1FAIpQLSdJPFqBPuTwcsCoULluGGmodo24mNgHM3w1HIvpewpKgFdybw/viewform"
@@ -131,7 +131,7 @@ const socialLinks = [
           <strong>Priority applications due Sep 19, 11:59 PM ET</strong>
         </h3>
         <h3 class="deadline">All applications due Sep 22, 11:59 PM ET</h3>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
