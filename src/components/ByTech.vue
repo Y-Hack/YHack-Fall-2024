@@ -7,7 +7,7 @@
     <div class="madewithloveby flx">
       <h1 class="yhacktech">
         Made with 💜 by the
-        <RouterLink to="/team" class="linktoteam">YHack team</RouterLink>!
+        <RouterLink to="/team" class="linktoteam">YHack Team</RouterLink>!
       </h1>
       <h2 class="copyright">© 2024 YHack. All Rights Reserved.</h2>
       <p class="codeofconduct">
