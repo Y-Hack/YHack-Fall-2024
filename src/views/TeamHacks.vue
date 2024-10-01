@@ -9,7 +9,7 @@ library.add(fas);
 
 // Team Members Data
 const teamMembers = [
-  { name: "Brandon Yee", position: "President", photo: new URL('../assets/images/yhack/brandon.png', import.meta.url).href, email: "brandon.yee@yale.edu" },
+  { name: "Brandon Yee", position: "Co-Director", photo: new URL('../assets/images/yhack/brandon.png', import.meta.url).href, email: "yhack@yhack.org" },
   { name: "Noah Dee", position: "Co-Director", photo: new URL('../assets/images/yhack/noah.png', import.meta.url).href, email: "noah.dee@yale.edu" },
   { name: "Leslie Kim", position: "Co-Director", photo: new URL('../assets/images/yhack/leslie.png', import.meta.url).href, email: "leslie.kim@yale.edu" },
   { name: "Kenny Tung", position: "Tech Director", photo: new URL('../assets/images/yhack/kenny.png', import.meta.url).href, email: "kenny.tung@yale.edu" },
