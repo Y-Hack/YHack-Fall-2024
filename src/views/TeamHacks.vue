@@ -13,6 +13,7 @@ const teamMembers = [
   { name: "Noah Dee", position: "Co-Director", photo: new URL('../assets/images/yhack/noah.png', import.meta.url).href, email: "noah.dee@yale.edu" },
   { name: "Leslie Kim", position: "Co-Director", photo: new URL('../assets/images/yhack/leslie.png', import.meta.url).href, email: "leslie.kim@yale.edu" },
   { name: "Kenny Tung", position: "Tech Director", photo: new URL('../assets/images/yhack/kenny.png', import.meta.url).href, email: "kenny.tung@yale.edu" },
+  { name: "Elizabeth Zhang", position: "Logistics Director", photo: new URL('../assets/images/yhack/elizabeth.png', import.meta.url).href, email: "elizabeth.zhang.esz6@yale.edu" },
   { name: "Grady Yu", position: "Developer", photo: new URL('../assets/images/yhack/no_photo.png', import.meta.url).href, email: "grady.yu@yale.edu" },
   { name: "Theresa Fu", position: "Logistics", photo: new URL('../assets/images/yhack/theresa.png', import.meta.url).href, email: "theresa.fu@yale.edu" },
   { name: "Andrew Liu", position: "Developer", photo: new URL('../assets/images/yhack/andrew.png', import.meta.url).href, email: "andrew.liu.al2775@yale.edu" },
